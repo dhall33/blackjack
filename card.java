@@ -1,23 +1,21 @@
 /**
- * Basic Card class
- * @author Chris M
- * @version 1.0
+ * Daneil Hall
+ * Card generator
+ * May 2, 2017
  */
 package blackjack;
 import java.util.Random;
 
-/**
- * The card class implements a basic playing card with a suite and face.
- */
+
 public class Card {
 
-    // Used in case of a card called without a constructor.
+    
     private Random objRandom = new Random();
-    // The internal value of the card.
+    
     private int intCardValue = 0;
 
     /**
-     * Default constructor that makes a card.
+     * Default card maker
      */
     public Card()
     {
@@ -25,30 +23,24 @@ public class Card {
     }
 
     /**
-     * Constructor that makes pintCard card.
-     * @param pintCard Number of card 1 to 52 generate.
+     * generates cards 1 thru 52
+     * 
      */
     public Card(int pintCard)
     {
         if ((pintCard < 1) || (pintCard > 52)) {
             pintCard = 1;
-            System.err.println("Card::Card - Invalid card value setting to 1.");
+            System.err.println("Can't do that! Imma set card value to 1 instead.");
         }
         this.intCardValue = pintCard;
     }
 
-    /**
-     * Gets the face of the card 1-13.
-     * @return The face of the card 1-13.
-     */
+  
     public int getFace() {
         return ((intCardValue - 1) % 13) + 1;
     }
 
-    /**
-     * Gets the value of the card 1 to 10.
-     * @return The value of the card 1-10.
-     */
+  
     public int getFaceValue() {
         int intFaceValue = getFace();
         
@@ -60,10 +52,7 @@ public class Card {
         return intFaceValue;
     }
 
-    /**
-     * Returns the string value for the face of the card.
-     * @return The string value for the face of the card.
-     */
+ 
     public String getFaceString() {
         String strReturn = "";
         int intFace = this.getFace();
@@ -88,18 +77,12 @@ public class Card {
         return strReturn;
     }
 
-    /**
-     * Returns the value of the card suite.
-     * @return The value of the card suite.
-     */
+
     public int getSuite() {
         return (intCardValue - 1) / 13;
     }
 
-    /**
-     * Returns a string representing the suite of the card.
-     * @return The suite of the card as a string.
-     */
+
     public String getSuiteString() {
         String strReturn = "";
         int intSuite = this.getSuite();
@@ -115,10 +98,6 @@ public class Card {
         return strReturn;
     }
 
-    /**
-     * The card represented as a string.
-     * @return The full string description of the card.
-     */
     public String toString() {
         String strReturn = "";
         strReturn += this.getFaceString();
@@ -127,9 +106,7 @@ public class Card {
         return strReturn;
     }
 
-    /**
-     * Sample main showing how to create a card.
-     */
+//idk wtf this is
     public static void main(String [] strArgs) {
         //Variables
         Card objCard = new Card();
