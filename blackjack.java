@@ -1,41 +1,26 @@
 /**
- * BlackJack Instance
- * @author Chris M
- * @version 1.0
+ * 
+ * Daniel Hall
+ * Final project, blackjack game
+ * May 2, 2017
  */
 package blackjack;
 import java.util.ArrayList;
-/**
- * Class stub out for the beginning of a blackjack game.
- */
+
 public class BlackJack {
 
-    /**
-     * Just a simple starting point for the class and it 
-     * starts by playing a round.
-     */
+
     public static void main(String [] strArgs) {
         BlackJack objGame = new BlackJack();
         objGame.playRound();
     }
 
-    /**
-     * Simple dealer logic to hard stop at 16.
-     * @param objDealer Player Player you want to add cards to until they get over 16.
-     * @param objDeck Deck Deak you want to get cards from.
-     * @return Player Player instance with new cards added.
-     */
+   
     public Player dealerLogic(Player objDealer, Deck objDeck) {
         return dealerLogic(objDealer, objDeck, 16);
     }
 
-    /**
-     * Simple dealer logic to hard stop at a certain point.
-     * @param objDealer Player Player you want to add cards to until they get over intStop.
-     * @param objDeck Deck Deak you want to get cards from.
-     * @param intStop int The total face value that stops the cards from being added.
-     * @return Player Player instance with new cards added.
-     */
+
     public Player dealerLogic(Player objDealer, Deck objDeck, int intStop) {
         while(objDealer.getTotalFaceValue() <= intStop &&
             objDealer.getNumberOfCards() < 4) {
