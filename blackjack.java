@@ -4,7 +4,7 @@
  * Final project, blackjack game
  * May 2, 2017
  */
-package blackjack;
+
 import java.util.ArrayList;
 
 public class BlackJack {
@@ -29,11 +29,9 @@ public class BlackJack {
         return objDealer;
     }
 
-    /**
-     * Incomplete concept of how you might play one round of blackjack.
-     */
+   
     public void playRound() {
-        //TODO: Gut this logic and add your own function calls to play your own version of BlackJack.
+       
 
         Deck objDeck = new Deck();
         objDeck.shuffle();
