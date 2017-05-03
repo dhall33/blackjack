@@ -4,7 +4,7 @@
  * may 2, 2017
  *
  */
-package blackjack;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
