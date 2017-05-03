@@ -3,7 +3,7 @@
  * Card generator
  * May 2, 2017
  */
-package blackjack;
+
 import java.util.Random;
 
 
@@ -106,7 +106,7 @@ public class Card {
         return strReturn;
     }
 
-//idk wtf this is
+//finds the name of card
     public static void main(String [] strArgs) {
         //Variables
         Card objCard = new Card();
