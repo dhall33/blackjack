@@ -4,7 +4,7 @@
  * 
  * May 2, 2017
  */
-package blackjack;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -75,7 +75,7 @@ public class Player {
     }
 
     /**
-     * Calculates the total face value of the cards in the players hand.
+     * Calculates the total value of cards in play
      */
     public int getTotalFaceValue() {
         int intFaceValueTotal = 0;
