@@ -72,12 +72,12 @@ public class BlackJack {
             objDeck.shuffle();
         }
 
-        /*
+        
         objPlayer1.addCard(objDeck.getCard());
         objPlayer1.addCard(objDeck.getCard());
         objPlayer1.addCard(objDeck.getCard());
         objPlayer1.addCard(objDeck.getCard());
         objPlayer1.printHand();
-        */
+        
     }
 }
