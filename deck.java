@@ -44,7 +44,7 @@ public class Deck {
     public boolean shouldShuffle() {
         int intShufflePercent = 75;
         int intCurrentPercent = percentLeft();
-        //System.out.println("Deck %: " + intCurrentPercent);
+        System.out.println("Deck %: " + intCurrentPercent);
         if(intCurrentPercent > intShufflePercent) {
             return true;
         }
