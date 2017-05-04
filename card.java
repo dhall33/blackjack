@@ -88,11 +88,14 @@ public class Card {
         int intSuite = this.getSuite();
         if(intSuite == 0) {
             strReturn += "Club";
-        } else if (intSuite == 1) {
+        } 
+            else if (intSuite == 1) {
             strReturn += "Diamonds";
-        } else if (intSuite == 2) {
+        } 
+            else if (intSuite == 2) {
             strReturn += "Hearts";
-        } else if (intSuite == 3) {
+        } 
+            else if (intSuite == 3) {
             strReturn += "Spades";
         }
         return strReturn;
